@@ -1,0 +1,227 @@
+:root{
+    --dark-color: #19283f;
+    --green-color : #33d1cc;
+    --red-color: #ff3150;
+    --yellow-color: #ffc400;
+    --section-color : #eff7fa;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+.main-btn ,.main-btn:hover{
+    background-color:var(--red-color) ;
+    border: none;
+    color: var(--yellow-color);
+    padding: 0.5rem 1rem;
+}
+
+.main-title::after{
+    content: "";
+    position:absolute;
+    background: var(--green-color);
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 120px;
+    height: 2px;
+}
+
+/* Start Nav */
+
+.navbar{
+    background-color: var(--dark-color);
+}
+.navbar .navbar-nav .nav-link{
+    color: #fff;
+}
+
+.navbar .navbar-nav .nav-link.active,
+.navbar .navbar-nav .nav-link:focus,
+.navbar .navbar-nav .nav-link:hover{
+    color: var(--green-color);
+}
+.search{
+    border-left: 1px solid var(--green-color);
+    
+}
+.search svg{
+    color: var(--green-color);
+}
+.navbar .navbar-toggler:focus{
+    box-shadow: none;
+}
+.navbar .navbar-toggler{
+    border-color: #fff;
+}
+.navbar .navbar-toggler[aria-expanded="true"] {
+    border-color: var(--green-color);
+}
+/* End Nav */
+
+/* Start Landing */
+.landing{
+    min-height:calc(100vh - 72px);
+    background-color: var(--dark-color);
+
+}
+.landing h1{
+    font-size: 58px;
+    font-weight: normal;
+}
+/* End Landing */
+
+/* Start Features */
+.features .icon-holder{
+    height: 200px;
+}
+.features .icon-holder svg{ 
+    left: 50%;
+    transform: translateX(-50%);
+}
+.number{
+    font-size: 12rem;
+    color: var(--section-color);
+}
+.icon-holder .icon{
+    color: var(--green-color);
+   
+}
+.features .feat h4{
+    color: var(--yellow-color);
+}
+/* End Features */
+
+/* Start Our Work */
+.our-work{
+    background-color: var(--section-color);
+}
+.our-work ul li{
+    padding:0.5rem  ;
+    
+    cursor: pointer;
+}
+.our-work ul li:not(.active):hover{
+    color: var(--red-color);
+}
+.our-work ul .active {
+    background-color: var(--red-color);
+    color: var(--yellow-color);
+}
+
+.our-work .box::before{
+    content: attr(data-work);
+    position:absolute;
+    background-color: #33d1ccbe;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s ease;
+    transform: translateX(-100%);
+}
+
+.our-work .box:hover::before{
+    transform: translateX(0);
+
+}
+/* End Our Work */
+
+/* Start About */
+.about .description{
+    max-width: 500px;
+}
+/* End About */
+
+/* End About  */
+
+/* Start Our Team  */
+.our-team{
+
+    background-color: var(--section-color);
+}
+.our-team-header h2{
+    color: var(--yellow-color);
+    font-weight: bold;
+}
+.our-team-header p{
+    max-width: 850px;
+    margin: auto;
+}
+
+.our-team .box h4{
+    background-color: var(--green-color);
+}
+/* End Our Team  */
+
+/* Start project */
+.project{
+    background-color: var(--dark-color);
+}
+
+
+/* End project */
+
+/* Start Subscribtion */
+.subscribtion{
+    background-color: var(--yellow-color);
+    
+}
+.subscribtion .container{
+    padding: 0 5rem;
+}
+
+.subscribtion input[type="text"]{
+    border: none;
+    border-bottom:2px solid #fff ;
+    outline: none;
+    
+}
+.subscribtion input::placeholder{
+    color: #fff;
+}
+
+.subscribtion input[type="submit"]{
+    background-color: var(--dark-color);
+    color: var(--yellow-color);
+    
+}
+/* End Subscribtion */
+
+/* Start Footer */
+footer{
+    background-color: var(--dark-color);
+}
+footer .copyright span{
+    color: var(--green-color);
+    
+}
+footer .copyright div span{
+    color: var(--yellow-color);
+}
+
+footer .icons svg{
+    width: 20px;
+    height: 20px;
+}
+
+.icons .facebook{
+    background-color: #1877f2;
+}
+
+.icons .twitter{
+    background-color: #1da1f2;
+}
+
+.icons .linkedin{
+    background-color: #0a66c2;
+}
+.icons .youtube{
+    background-color: #ff0000;
+}
+/* End Footer */
