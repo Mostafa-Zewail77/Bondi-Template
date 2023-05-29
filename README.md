@@ -1,6 +1,6 @@
 # Bondi-Template
 
-Bondi is creative, colorful landing page for single author or small agency. 
+Bondi is a creative, colorful landing page for a single author or small agency. 
 It provides a clean and minimalistic layout that highlights your content and allows visitors to focus on your work. <br>
 The template is fully responsive and optimized for various screen sizes, ensuring that your website looks great on any device. <br>
 Built using Bootstrap.
